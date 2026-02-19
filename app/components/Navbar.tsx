@@ -67,7 +67,7 @@ const Navbar = () => {
               key={link.href}
               href={link.href}
               // Light mode: Stronger grey (#4a4460) for visibility
-              className="text-sm font-semibold text-[#4a4460] dark:text-muted-foreground hover:text-[#7c3aed] dark:hover:text-primary transition-colors"
+              className="text-sm font-semibold text-[#FFFAFA] dark:text-muted-foreground hover:text-[#7c3aed] dark:hover:text-primary transition-colors"
             >
               {link.label}
             </a>
@@ -78,7 +78,7 @@ const Navbar = () => {
         <div className="hidden md:flex items-center gap-3">
           <button
             onClick={toggleTheme}
-            className="p-2 rounded-lg text-[#4a4460] dark:text-muted-foreground hover:bg-[#ede9f9] dark:hover:bg-secondary transition-colors"
+            className="p-2 rounded-lg text-[#FFFAFA] dark:text-muted-foreground hover:bg-[#ede9f9] dark:hover:bg-secondary transition-colors"
             aria-label="Toggle theme"
           >
             {isDark ? <Sun size={18} /> : <Moon size={18} />}

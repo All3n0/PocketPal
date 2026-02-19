@@ -5,7 +5,7 @@
 @variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --color-background: #f7f6fc;
+  --color-background: #9f93dd;
   --color-foreground: #1a0f2e;
 
   --color-card: #f3f1fa;
@@ -57,7 +57,7 @@
 
 .dark {
   --color-background: #0d0717;
-  --color-foreground: #f0eefa;
+  --color-foreground: #9f93dd;
 
   --color-card: #160d2a;
   --color-card-foreground: #f0eefa;

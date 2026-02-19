@@ -1,5 +1,6 @@
 'use client';
-import { Mail, MapPin } from "lucide-react";
+import { Mail, MapPin, Heart } from "lucide-react";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -47,8 +48,8 @@ const Footer = () => {
             <h4 className="font-display font-semibold text-foreground mb-4">Connect</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="mailto:hello@pocketpal.app" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
-                  <Mail size={14} /> hello@pocketpal.app
+                <a href="mailto:hello@pocketpal.vercel.app" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
+                  <Mail size={14} /> hello@pocketpal.vercel.app
                 </a>
               </li>
               <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">Twitter / X</a></li>
@@ -58,10 +59,29 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-border pt-6 text-center">
-          <p className="text-muted-foreground text-sm">
-            © {new Date().getFullYear()} Pocket Pal. All rights reserved.
-          </p>
+        <div className="border-t border-border pt-6">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p className="text-muted-foreground text-sm order-2 sm:order-1">
+              © {new Date().getFullYear()} Pocket Pal. All rights reserved.
+            </p>
+            
+            <div className="order-1 sm:order-2">
+              <a 
+                href="https://all-k.vercel.app" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 group"
+              >
+                <span className="text-xs text-muted-foreground group-hover:text-foreground transition-colors">
+                  Built by
+                </span>
+                
+                <span className="text-sm font-display font-semibold text-primary hover:text-primary/80 transition-colors">
+              Allan Kiprop
+                </span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
